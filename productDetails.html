@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All product</title>
+        <link rel="stylesheet" href="Asset/css/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Asset/image/HatchfulExport-All/twitter_profile_image.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="" >Home</a></li>
+                        <li><a href="" >Product</a></li>
+                        <li><a href="" >About</a></li>
+                        <li><a href="" >Contact</a></li>
+                        <li><a href="">My Account</a></li>
+                    </ul>
+                </nav>
+                <img src="Asset/image/luggage-cart-solid.svg" width="30px" height="30ox">
+                <img src="Asset/image/bars-solid.svg" class="menu" onclick="menutoggle()">
+            </div>
+        </div>
+        </div>
+   
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Asset/image/za-galaxy-a12-a125-sm-a125fzkgafa-368840052.webp" width="100%" id="productImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="Asset/image/za-galaxy-a3core-a013-dual-sm-a013gzkdxfa-frontblack-295887934.webp" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="Asset/image/za-galaxy-a12-a125-sm-a125fzkgafa-368840052.webp" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="Asset/image/za-galaxy-a12-a125-sm-a125fzkgafa-368840052.webp" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="Asset/image/za-galaxy-a12-a125-sm-a125fzkgafa-368840052.webp" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home/ Galaxy</p>
+                    <h1>Samsung</h1>
+                    <h4>R 3295</h4>
+                    <a href="" class="btn">Add to Cart</a>
+                    <h3>Product details</h3>
+                    <p>More display means more room to play, Looks as good as it feels, Upgrade your mobile photography with Quad Camera</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row">
+            <div class="col-4">
+                <img src="Asset/image/za-galaxy-a12-a125-sm-a125fzkgafa-368840052.webp">
+                <h4>Samsung</h4>
+                <h5>A12 64GB Dual Sim - Black</h5>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R 3,295</p>
+            </div>
+            <div class="col-4">
+                <img src="Asset/image/za-galaxy-a3core-a013-dual-sm-a013gzkdxfa-frontblack-295887934.webp">
+                <h4>Samsung</h4>
+                <h5>A3 Core 16GB Dual Sim - Black</h5>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R 3,290</p>
+            </div>
+        </div>
+        </div>
+
+
+<!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h1>GradTech</h1>
+                        <p style="color: white">We promise you will get everything you need</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <img src="Asset/image/002-twitter.png" class="follow" width="45">
+                        <img src="Asset/image/003-whatsapp.png" class="follow" width="45">
+                        <img src="Asset/image/011-instagram.png" class="follow" width="45">
+                        <img src="Asset/image/001-facebook.png" class="follow" width="45">
+                    </div>
+                </div>
+                <p style="border: 1px solid white"></p>
+            </div>  
+        </div>
+        
+        <script>
+            var menuItems = document.getElementById("menuItems");
+            menuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(menuItems.style.maxHeight == "0px"){
+                    menuItems.style.maxHeight = "200px";
+                }else{
+                    menuItems.style.maxHeight = "0px";
+                }
+                    
+            }
+
+            var ProductImg = document.getElementById("productImg");
+            var smallImg = document.getElementsByClassName("small-img");
+                smallImg[0].onclick = function(){
+                    ProductImg.src= smallImg[0].src;
+                }
+                smallImg[1].onclick = function(){
+                    ProductImg.src= smallImg[1].src;
+                }
+                smallImg[2].onclick = function(){
+                    ProductImg.src= smallImg[2].src;
+                }
+                smallImg[3].onclick = function(){
+                    ProductImg.src= smallImg[3].src;
+                }
+        </script>
+    </body>
+</html>
