@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="Asset/css/style.css">
+        <script src="https://kit.fontawesome.com/94c09b34ef.js" ></script>
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Asset/image/HatchfulExport-All/twitter_profile_image.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="product.html" >Product</a></li>
+                        <li><a href="" >About</a></li>
+                        <li><a href="contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="Asset/image/luggage-cart-solid.svg" width="30px" height="30ox"></a>
+                <img src="Asset/image/bars-solid.svg" class="menu" onclick="menutoggle()">
+            </div>
+        </div>
+        </div>
+   
+       
+
+<!--Contact details-->
+        <h1 style="text-align:center">Contact Us</h1>
+      <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7152.307140857021!2d28.177542499999998!3d-26.3215263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951bbe03537e95%3A0xb57853552c1886a4!2sSpruit%20View%20Gardens!5e0!3m2!1sen!2sza!4v1627616349608!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>           
+       </section>
+       <section class="contact-us">
+           <div class="row">
+              <div class="contact-col">
+                  <div>
+                      <i class="fa-solid fa-house"></i>
+                      <span>
+                          <h5>Ramangwele Street, Spruitview Gardens</h5>
+                          <p>Katlehong</p>
+                      </span>
+                  </div>
+                  <div>
+                      <i class="fa-solid fa-phone"></i>
+                      <span>
+                          <h5>+27 10 100 6987</h5>
+                          <p>Monday to Sunday, 9am to 5pm</p>
+                      </span>
+                  </div>
+              </div>
+              <div class="contact-col"></div>
+           </div>
+       </section>
+
+<!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h1>GradTech</h1>
+                        <p style="color: white">We promise you will get everything you need</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <img src="Asset/image/002-twitter.png" class="follow" width="45">
+                        <img src="Asset/image/003-whatsapp.png" class="follow" width="45">
+                        <img src="Asset/image/011-instagram.png" class="follow" width="45">
+                        <img src="Asset/image/001-facebook.png" class="follow" width="45">
+                    </div>
+                </div>
+                <p style="border: 1px solid white"></p>
+            </div>  
+        </div>
+        
+        <script>
+            var menuItems = document.getElementById("menuItems");
+            menuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(menuItems.style.maxHeight == "0px"){
+                    menuItems.style.maxHeight = "200px";
+                }else{
+                    menuItems.style.maxHeight = "0px";
+                }
+                    
+            }
+        </script>
+    </body>
+</html>

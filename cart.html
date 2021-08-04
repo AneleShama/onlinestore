@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <link rel="stylesheet" href="Asset/css/style.css">
+        <script src="https://kit.fontawesome.com/94c09b34ef.js" ></script>
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Asset/image/HatchfulExport-All/twitter_profile_image.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="product.html" >Product</a></li>
+                        <li><a href="" >About</a></li>
+                        <li><a href="contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="Asset/image/luggage-cart-solid.svg" width="30px" height="30ox"></a>
+                <img src="Asset/image/bars-solid.svg" class="menu" onclick="menutoggle()">
+            </div>
+        </div>
+        </div>
+   
+
+<!--Cart items details-->
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="Asset/image/za-galaxy-a3core-a013-dual-sm-a013gzkdxfa-frontblack-295887934.webp">
+                            <div>
+                                <p>A12 64GB Dual Sim - Black</p>
+                                <small>R3265</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R3000</td> 
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="Asset/image/za-galaxy-a12-a125-sm-a125fzkgafa-368840052.webp">
+                            <div>
+                                <p>A12 64GB Dual Sim - Black</p>
+                                <small>R3265</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R3000</td> 
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="Asset/image/za-galaxy-a3core-a013-dual-sm-a013gzkdxfa-frontblack-295887934.webp">
+                            <div>
+                                <p>A12 64GB Dual Sim - Black</p>
+                                <small>R3265</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R3000</td> 
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="Asset/image/za-galaxy-a52-a525-377934-sm-a525fzbdafa-409609734.webp">
+                            <div>
+                                <p>A12 64GB Dual Sim - Black</p>
+                                <small>R3265</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R13000</td> 
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>R23000</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>R3220</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>R26220</td>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+
+<!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h1>GradTech</h1>
+                        <p style="color: white">We promise you will get everything you need</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <img src="Asset/image/002-twitter.png" class="follow" width="45">
+                        <img src="Asset/image/003-whatsapp.png" class="follow" width="45">
+                        <img src="Asset/image/011-instagram.png" class="follow" width="45">
+                        <img src="Asset/image/001-facebook.png" class="follow" width="45">
+                    </div>
+                </div>
+                <p style="border: 1px solid white"></p>
+            </div>  
+        </div>
+        
+        <script>
+            var menuItems = document.getElementById("menuItems");
+            menuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(menuItems.style.maxHeight == "0px"){
+                    menuItems.style.maxHeight = "200px";
+                }else{
+                    menuItems.style.maxHeight = "0px";
+                }
+                    
+            }
+        </script>
+    </body>
+</html>
